@@ -26,7 +26,7 @@ import { defineConfig } from "vite";
 import { qwikVite } from "@builder.io/qwik/optimizer";
 import { qwikCity } from "@builder.io/qwik-city/vite";
 
-import { qwikPath } from "@ueuie.dev/qwik-path/vite";
+import { qwikPath } from "qwik-path/vite";
 
 export default defineConfig(async (env) => {
     return {
@@ -52,7 +52,7 @@ Then based on the routing convention, routes' paths can be asserted:
 ```tsx
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import { $path } from "@ueuie.dev/qwik-path";
+import { $path } from "qwik-path";
 
 export default component(() => {
   return (
