@@ -2,6 +2,20 @@
 
 Qwik Path is a vite plugin that assumes route paths based on the [routing convention of Qwik City](https://qwik.builder.io/docs/routing/).
 
+## Installation
+
+```bash
+pnpm add qwik-path@latest --save-dev
+```
+
+```bash
+yarn add qwik-path@latest --dev
+```
+
+```bash
+npm install qwik-path@latest --save-dev
+```
+
 ## Using $Path
 
 `vite.config.ts`
