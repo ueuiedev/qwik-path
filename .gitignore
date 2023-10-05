@@ -1,0 +1,43 @@
+# build
+/dist
+/vite
+
+# development
+node_modules
+*.local
+
+# cache
+.cache
+.eslintcache
+.mf
+.rollup.cache
+tsconfig.tsbuildinfo
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# editor
+.vscode/*
+!.vscode/launch.json
+!.vscode/*.code-snippets
+
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# yarn
+.yarn/*
+!.yarn/releases
+
+# cloudflare
+functions/**/*.js

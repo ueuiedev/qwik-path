@@ -1,0 +1,80 @@
+{
+  "name": "qwik-path",
+  "version": "1.0.3",
+  "type": "module",
+  "publisher": "@uceumice <contact@ueuie.dev>",
+  "repository": {
+    "url": "https://github.com/ueuiedev/qwik-path",
+    "type": "git"
+  },
+  "author": {
+    "name": "uceumice",
+    "email": "contact@ueuie.dev",
+    "url": "https://ueuie.dev"
+  },
+  "bugs": {
+    "url": "https://github.com/ueuiedev/qwik-path/issues",
+    "email": "contact@ueuie.dev"
+  },
+  "homepage": "https://github.com/ueuiedev/qwik-path",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./vite": {
+      "types": "./vite/index.d.ts",
+      "import": "./vite/index.js",
+      "require": "./vite/index.cjs"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "vite"
+  ],
+  "scripts": {
+    "build": "run-p build:*",
+    "build:path": "tsup",
+    "build:vite": "tsup --config tsup.vite.config.ts",
+    "check": "tsc --noEmit",
+    "clean": "rimraf -g -V -I -- node_modules .turbo dist",
+    "dev": "run-p dev:*",
+    "dev:path": "tsup --watch",
+    "dev:vite": "tsup --watch --config tsup.vite.config.ts",
+    "eslint": "eslint --cache --ext .ts,.json --report-unused-disable-directives .",
+    "eslint.fix": "eslint --cache --ext .ts,.json --fix --report-unused-disable-directives .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "@bosscard/eslint-config": "^0.1.0",
+    "@types/ejs": "^3.1.3",
+    "@types/node": "^20.7.1",
+    "eslint": "^8.50.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "qwik",
+    "path",
+    "$path",
+    "routes",
+    "routing"
+  ],
+  "license": "MIT",
+  "description": "Qwik Path is a vite plugin that assumes route paths based on the routing convention of Qwik City."
+}

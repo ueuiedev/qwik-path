@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": "@bosscard/eslint-config/package"
+}
