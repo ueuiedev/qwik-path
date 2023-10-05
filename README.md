@@ -40,12 +40,17 @@ import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { $path } from "@ueuie.dev/qwik-path";
 
-export default component(()=>{
-    return (
-        <div>
-            <Link href={$path("/blog/:lang/:slug", { lang:"en", slug:"qwik-path-inpired-by-remix-routes" })} />
-        </div>
-    );
+export default component(() => {
+  return (
+    <div>
+      <Link
+        href={$path("/blog/:lang/:slug", {
+          lang: "en",
+          slug: "qwik-path-inpired-by-remix-routes",
+        })}
+      />
+    </div>
+  );
 });
 ```
 

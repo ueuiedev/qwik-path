@@ -3,14 +3,14 @@
   "version": "1.0.3",
   "type": "module",
   "publisher": "@uceumice <contact@ueuie.dev>",
-  "repository": {
-    "url": "https://github.com/ueuiedev/qwik-path",
-    "type": "git"
-  },
   "author": {
     "name": "uceumice",
     "email": "contact@ueuie.dev",
     "url": "https://ueuie.dev"
+  },
+  "repository": {
+    "url": "https://github.com/ueuiedev/qwik-path",
+    "type": "git"
   },
   "bugs": {
     "url": "https://github.com/ueuiedev/qwik-path/issues",
