@@ -16,7 +16,7 @@
     "url": "https://github.com/ueuiedev/qwik-path/issues",
     "email": "contact@ueuie.dev"
   },
-  "homepage": "https://github.com/ueuiedev/qwik-path",
+  "homepage": "https://github.com/ueuiedev/qwik-path#readme",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
